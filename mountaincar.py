@@ -5,7 +5,7 @@ import time
 
 
 def initQTable(degOfEst, numVar, numAction):
-    # [degOfEst, degOfEst, degOfEst, degOfEst, numAction]
+    # [degOfEst, degOfEst, numAction]
     dimension = [degOfEst]*numVar + [numAction]
     qTable = np.zeros(dimension)
     return qTable
